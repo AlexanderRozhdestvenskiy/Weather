@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ImageTempView: View {
+    
+    private let viewModel: DailyWeatherRowViewModel
+    
     var body: some View {
         VStack {
             Text("Cupertino, CA")
@@ -21,7 +24,7 @@ struct ImageTempView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 180, height: 180)
                 
-                Text("76˚")
+                Text(viewModel.temperature)
                     .font(.system(size: 70, weight: .medium))
                     .foregroundColor(.white)
             }
