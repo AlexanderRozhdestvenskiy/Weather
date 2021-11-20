@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89820C38271991CB005DE426 /* ImageTempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820C37271991CB005DE426 /* ImageTempView.swift */; };
-		89820C3A271992BF005DE426 /* ButtonChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820C39271992BF005DE426 /* ButtonChangeView.swift */; };
 		89820C3C27199324005DE426 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820C3B27199324005DE426 /* BackgroundView.swift */; };
 		89820C3E27199537005DE426 /* WheatherDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89820C3D27199537005DE426 /* WheatherDayView.swift */; };
 		89BE63D32747E14200AA400D /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BE63D22747E14200AA400D /* WeatherView.swift */; };
@@ -21,8 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		89820C37271991CB005DE426 /* ImageTempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTempView.swift; sourceTree = "<group>"; };
-		89820C39271992BF005DE426 /* ButtonChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChangeView.swift; sourceTree = "<group>"; };
 		89820C3B27199324005DE426 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		89820C3D27199537005DE426 /* WheatherDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherDayView.swift; sourceTree = "<group>"; };
 		89BE63D22747E14200AA400D /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -51,8 +47,6 @@
 			children = (
 				89820C3D27199537005DE426 /* WheatherDayView.swift */,
 				89820C3B27199324005DE426 /* BackgroundView.swift */,
-				89820C39271992BF005DE426 /* ButtonChangeView.swift */,
-				89820C37271991CB005DE426 /* ImageTempView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -171,10 +165,8 @@
 				89BE63D72747E27600AA400D /* WeatherViewModel.swift in Sources */,
 				89820C3E27199537005DE426 /* WheatherDayView.swift in Sources */,
 				89F290FE2718E2200059C584 /* WeatherApp.swift in Sources */,
-				89820C3A271992BF005DE426 /* ButtonChangeView.swift in Sources */,
 				89BE63D32747E14200AA400D /* WeatherView.swift in Sources */,
 				89BE63D52747E26700AA400D /* WeatherModel.swift in Sources */,
-				89820C38271991CB005DE426 /* ImageTempView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

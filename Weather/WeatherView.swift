@@ -9,41 +9,46 @@ import SwiftUI
 
 struct WeatherView: View {
     
+    var cities = ["London", "Paris", "Barcelona", "Milan"]
+    
     @ObservedObject var viewModel: WeeklyWeatherViewModel
-    
-    init(viewModel: WeeklyWeatherViewModel) {
-        self.viewModel = viewModel
-    }
-    
+   
     var body: some View {
-        ZStack {
+        NavigationView {
+            ZStack {
             
-            BackgroundView()
-            
-            VStack {
+                BackgroundView()
                 
-                TextField(" City", text: $viewModel.city)
-                    .background(Color.white)
-                    .padding()
-                    .frame(width: .infinity, height: 64, alignment: .center)
-                    .cornerRadius(16)
-                
-                Text(viewModel.city)
-                    .font(.system(size: 32, weight: .medium, design: .default))
-                    .foregroundColor(.white)
-                    .padding()
-                
-                Spacer()
-                 
                 VStack {
-                    ForEach(viewModel.dataSource, id: \.self) { data in
-                        WeatherDayView(viewModel: data)
+                    
+                    Picker("City", selection: $viewModel.city) {
+                        ForEach(cities, id: \.self) {
+                            Text($0)
+                        }
                     }
+                    .pickerStyle(.segmented)
+                    .background(Color.white)
+                    .cornerRadius(6)
+                    .padding()
+                    
+                    Text(viewModel.city)
+                        .font(.system(size: 32, weight: .medium, design: .default))
+                        .foregroundColor(.white)
+                        .padding()
+                    
+                    Spacer()
+                     
+                    VStack {
+                        ForEach(viewModel.dataSource, id: \.self) { data in
+                            WeatherDayView(viewModel: data)
+                        }
+                    }
+                    .padding()
+                    
+                    Spacer()
                 }
-                .padding()
-                
-                Spacer()
             }
+            .navigationBarTitle("Weather")
         }
     }
 }

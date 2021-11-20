@@ -21,8 +21,10 @@ struct WeatherDayView: View {
                 .foregroundColor(.white)
             Text("\(viewModel.month)")
                 .foregroundColor(.white)
+            Spacer()
             Text("\(viewModel.temperature)")
                 .foregroundColor(.white)
+                .font(.title)
         }
     }
 }
